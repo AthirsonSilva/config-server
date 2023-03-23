@@ -1,0 +1,36 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      enabled: 'true'
+      show-details: always
+  info:
+    env:
+      enabled: 'true'
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  application:
+    name: department-service
+  datasource:
+    password: '@Potter77'
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/department_db
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    enabled: 'true'
+  instance:
+    appname: department-service
+server:
+  port: '8080'
