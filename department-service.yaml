@@ -25,6 +25,8 @@ spring:
     password: '@Potter77'
     username: postgres
     url: jdbc:postgresql://localhost:5432/department_db
+  boot:
+    message: 'Department Service...'
 eureka:
   client:
     service-url:
