@@ -26,7 +26,7 @@ spring:
     username: postgres
     url: jdbc:postgresql://localhost:5432/department_db
   boot:
-    message: 'Department Service...'
+    message: 'Department Service instance...'
 eureka:
   client:
     service-url:
