@@ -11,6 +11,8 @@ management:
     env:
       enabled: 'true'
 spring:
+  boot:
+    message: 'Gotcha'
   jpa:
     properties:
       hibernate:
