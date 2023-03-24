@@ -12,7 +12,7 @@ management:
       enabled: 'true'
 spring:
   boot:
-    message: 'Gotcha! Employee services....'
+    message: 'Employee services config server....'
   jpa:
     properties:
       hibernate:
