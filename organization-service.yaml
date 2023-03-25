@@ -19,6 +19,11 @@ management:
 server:
     port: 8083
 
+rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
