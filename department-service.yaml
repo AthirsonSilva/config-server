@@ -27,6 +27,12 @@ spring:
     url: jdbc:postgresql://localhost:5432/department_db
   boot:
     message: 'Department Service config server...'
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    
 eureka:
   client:
     service-url:
